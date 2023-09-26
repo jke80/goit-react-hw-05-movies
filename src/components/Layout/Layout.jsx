@@ -8,8 +8,9 @@ const Layout = () => {
   return (
     <StyledLayout>
       <Header />
-      <Suspense fallback={<Loading />}></Suspense>
-      <Outlet />
+      <Suspense fallback={<Loading />}>
+        <Outlet />
+      </Suspense>
     </StyledLayout>
   );
 };
