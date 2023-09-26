@@ -8,9 +8,7 @@ const SearchForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
     if (!value.length) return;
-
     setSearchParams({ query: value });
     setValue('');
     e.currentTarget.reset();

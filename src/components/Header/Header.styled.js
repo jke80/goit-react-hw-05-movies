@@ -14,11 +14,9 @@ export const StyledNavLink = styled(NavLink)`
   color: black;
   text-decoration: none;
 
-  &.active {
-    color: orange;
-  }
-  &:hover,
-  &:focus {
+  &.active,
+  &:focus,
+  &:hover {
     color: orange;
   }
 `;

@@ -24,7 +24,6 @@ export const StyledSearchForm = styled.form`
     display: inline-block;
     width: 30ch;
     font: inherit;
-
     padding: 4px;
   }
 `;

@@ -4,8 +4,8 @@ export const Loading = () => {
   return (
     <RotatingLines
       strokeColor="orange"
-      strokeWidth="5"
-      animationDuration="0.75"
+      strokeWidth="4"
+      animationDuration="0,75"
       width="70"
       visible={true}
     />

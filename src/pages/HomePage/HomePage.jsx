@@ -1,6 +1,5 @@
 import { getTrandingMovies } from 'services/tmdbApi';
 import { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
 import { StyledLink, StyledList } from './HomePage.styled';
 import { Loading } from 'components/Loading/Loading';
 import { useLocation } from 'react-router-dom';
