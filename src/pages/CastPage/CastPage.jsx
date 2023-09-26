@@ -37,8 +37,12 @@ const CastPage = () => {
                 src={getTmdbPhoto(item.profile_path)}
                 alt={item.name}
               />
-              <p>Name: {item.name}</p>
-              <p>Character: {item.character}</p>
+              <p>
+                Name: <span>{item.name}</span>
+              </p>
+              <p>
+                Character: <span>{item.character}</span>
+              </p>
             </li>
           );
         })}

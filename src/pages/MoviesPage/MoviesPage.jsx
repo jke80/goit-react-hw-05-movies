@@ -7,19 +7,13 @@ import { Loading } from 'components/Loading/Loading';
 
 const MoviesPage = () => {
   const location = useLocation();
-
   const [searchParams] = useSearchParams();
   const [searchMovies, setSearchMovies] = useState([]);
   const [queryString, setQueryString] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  // const handleSubmitSearch = query => {
-  //   setQueryString(query);
-  // };
-
   useEffect(() => {
     setQueryString(searchParams.get('query') ?? '');
-    console.log('serchparam');
   }, [searchParams]);
 
   useEffect(() => {

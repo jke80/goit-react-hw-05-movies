@@ -9,7 +9,6 @@ const HomePage = () => {
   const [trandingMovies, setTrendingMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
-
   useEffect(() => {
     setIsLoading(true);
     getTrandingMovies()

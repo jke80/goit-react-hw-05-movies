@@ -3,10 +3,10 @@ import { RotatingLines } from 'react-loader-spinner';
 export const Loading = () => {
   return (
     <RotatingLines
-      strokeColor="grey"
+      strokeColor="orange"
       strokeWidth="5"
       animationDuration="0.75"
-      width="96"
+      width="70"
       visible={true}
     />
   );
