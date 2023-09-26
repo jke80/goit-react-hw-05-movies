@@ -9,8 +9,11 @@ export const Header = () => {
   return (
     <StyledHeader>
       <nav>
-        <StyledNavLink to="/jke80.github.io">Home</StyledNavLink>
-        <StyledNavLink to="/jke80.github.io/movies" state={{ from: location }}>
+        <StyledNavLink to="/goit-react-hw-05-movies">Home</StyledNavLink>
+        <StyledNavLink
+          to="/goit-react-hw-05-movies/movies"
+          state={{ from: location }}
+        >
           Movies
         </StyledNavLink>
       </nav>

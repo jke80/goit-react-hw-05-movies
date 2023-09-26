@@ -19,7 +19,7 @@ export const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/jke80.github.io/" element={<Layout />}>
+        <Route path="/goit-react-hw-05-movies/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="movies" element={<MoviesPage />} />
           <Route path="movies/:movieId" element={<MovieDetailPage />}>
