@@ -25,7 +25,7 @@ export const getSearchMovies = async (query = '', page = 1) => {
   const options = {
     params: {
       query,
-      include_adult: true,
+      include_adult: false,
       page,
     },
   };
