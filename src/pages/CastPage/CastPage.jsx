@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getMovieCredits } from 'services/tmdbApi';
 import { StyledList } from './CastPage.styled';
-import { getTmdbPhoto } from 'services/getActorPhoto';
+import { getTmdbPhoto } from 'services/getPhoto';
 
 const CastPage = () => {
   const { movieId } = useParams();

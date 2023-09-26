@@ -11,7 +11,7 @@ import {
 import { getYear } from 'services/getFullYear';
 
 import { Loading } from 'components/Loading/Loading';
-import { getTmdbPhoto } from 'services/getActorPhoto';
+import { getTmdbPhoto } from 'services/getPhoto';
 
 const MovieDetailPage = () => {
   const { movieId } = useParams();

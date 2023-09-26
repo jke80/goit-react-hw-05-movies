@@ -17,7 +17,7 @@ const instance = axios.create({
 
 export const getTrandingMovies = async (timeWindow = 'day') => {
   const responce = await instance.get(`/trending/movie/${timeWindow}`);
-  console.log('tmbAPI', responce);
+
   return responce;
 };
 
@@ -30,19 +30,19 @@ export const getSearchMovies = async (query = '', page = 1) => {
     },
   };
   const responce = await instance.get(`/search/movie`, options);
-  console.log('tmbAPI', responce);
+
   return responce;
 };
 
 export const getMovieDetails = async (movieId = 736074) => {
   const responce = await instance.get(`/movie/${movieId}`);
-  console.log('tmbAPI', responce);
+
   return responce;
 };
 
 export const getMovieCredits = async (movieId = 736074) => {
   const responce = await instance.get(`/movie/${movieId}/credits`);
-  console.log('tmbAPI', responce);
+
   return responce;
 };
 
@@ -53,6 +53,6 @@ export const getMovieReviews = async (movieId = 736074, page = 1) => {
     },
   };
   const responce = await instance.get(`/movie/${movieId}/reviews`, options);
-  console.log('tmbAPI', responce);
+
   return responce;
 };
