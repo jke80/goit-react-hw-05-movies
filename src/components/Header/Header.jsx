@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <StyledHeader>
       <nav>
-        <StyledNavLink to="/goit-react-hw-05-movies" end>
+        <StyledNavLink to="/goit-react-hw-05-movies/" end>
           Home
         </StyledNavLink>
         <StyledNavLink
