@@ -24,8 +24,6 @@ const CastPage = () => {
       });
   }, [movieId]);
 
-  console.log(cast);
-
   return isLoading ? (
     <Loading />
   ) : (

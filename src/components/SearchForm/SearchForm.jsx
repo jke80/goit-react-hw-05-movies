@@ -9,7 +9,7 @@ const SearchForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     if (!value.length) return;
-    setSearchParams({ query: value });
+    setSearchParams({ query: value, page: 1 });
     setValue('');
     e.currentTarget.reset();
   };

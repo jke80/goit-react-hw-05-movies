@@ -15,8 +15,14 @@ const instance = axios.create({
 
 // timeWindow:day,week
 
-export const getTrandingMovies = async (timeWindow = 'day') => {
-  const responce = await instance.get(`/trending/movie/${timeWindow}`);
+export const getTrandingMovies = async (timeWindow = 'day', page = 1) => {
+  const options = {
+    params: {
+      include_adult: true,
+      page,
+    },
+  };
+  const responce = await instance.get(`/trending/movie/${timeWindow}`, options);
 
   return responce;
 };
