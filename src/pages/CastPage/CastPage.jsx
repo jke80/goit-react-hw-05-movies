@@ -24,28 +24,34 @@ const CastPage = () => {
       });
   }, [movieId]);
 
+  console.log(cast);
+
   return isLoading ? (
     <Loading />
   ) : (
     <div>
       <StyledList>
-        {cast.map(item => {
-          return (
-            <li key={item.id}>
-              <img
-                width={150}
-                src={getTmdbPhoto(item.profile_path)}
-                alt={item.name}
-              />
-              <p>
-                Name: <span>{item.name}</span>
-              </p>
-              <p>
-                Character: <span>{item.character}</span>
-              </p>
-            </li>
-          );
-        })}
+        {cast.length ? (
+          cast.map(item => {
+            return (
+              <li key={item.id}>
+                <img
+                  width={150}
+                  src={getTmdbPhoto(item.profile_path)}
+                  alt={item.name}
+                />
+                <p>
+                  Name: <span>{item.name}</span>
+                </p>
+                <p>
+                  Character: <span>{item.character}</span>
+                </p>
+              </li>
+            );
+          })
+        ) : (
+          <p>We don't have any information about cast of this movie 😒 </p>
+        )}
       </StyledList>
     </div>
   );
