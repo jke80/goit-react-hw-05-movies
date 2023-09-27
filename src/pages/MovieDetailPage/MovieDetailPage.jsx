@@ -50,7 +50,9 @@ const MovieDetailPage = () => {
   ) : (
     title && (
       <Container>
-        <StyledLink to={location.state?.from ?? '/'}>Go back</StyledLink>
+        <StyledLink to={location.state?.from ?? '/goit-react-hw-05-movies/'}>
+          Go back
+        </StyledLink>
         <OverviewContainer>
           <img src={getTmdbPhoto(poster_path)} alt={title} />
           <div>
